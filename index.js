@@ -13,7 +13,7 @@ const emailStatus = [];
 const providerStatus = [];
 
 // Define API endpoint to send emails
-app.get('/send-emails', async (req, res) => {
+app.post('/send-emails', async (req, res) => {
     const emails = req.body.emails;
 
     if (!Array.isArray(emails)) {
