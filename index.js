@@ -13,7 +13,7 @@ const emailStatus = [];
 const providerStatus = [];
 
 // Define API endpoint to send emails
-app.post('/', async (req, res) => {
+app.get('/send-emails', async (req, res) => {
     const emails = req.body.emails;
 
     if (!Array.isArray(emails)) {
@@ -27,7 +27,7 @@ app.post('/', async (req, res) => {
     });
 });
 
-// app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // app.get("/testing", (req, res) => res.send("Testing Path"));
 
