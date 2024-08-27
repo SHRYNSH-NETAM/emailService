@@ -27,9 +27,9 @@ app.post('/send-emails', async (req, res) => {
     });
 });
 
-// app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
-// app.use("/testing", (req, res) => res.send("Testing Path"));
+app.use("/testing", (req, res) => res.send("Testing Path"));
 
 // Start the server
 const PORT = process.env.PORT || 3000;
