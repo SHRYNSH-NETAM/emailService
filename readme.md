@@ -15,6 +15,8 @@ This project is an Express API that utilizes a custom EmailService to send email
 
 • Provider Fallback: Automatically switches to alternative providers if the primary provider fails.
 
+[Documentation](https://github.com/SHRYNSH-NETAM/emailService/blob/main/Documentation.pdf)
+
 
 ## Installation
 
