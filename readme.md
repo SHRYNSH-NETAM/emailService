@@ -102,7 +102,6 @@ The server will run on http://localhost:3000 by default. You can change the port
 
 
 
-
 ## Running Tests
 
 To test the functionality of the EmailService, you can run the provided test script:
