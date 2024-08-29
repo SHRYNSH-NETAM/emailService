@@ -39,14 +39,6 @@ class EmailService {
         const uniqueId = this.generateUniqueId(email);
         console.log(`Sending Email with ID:${uniqueId} -->`);
         if (this.statusMap.has(uniqueId) && this.statusMap.get(uniqueId).success===true) {
-            const status = {
-                id: uniqueId,
-                success: false,
-                provider: "",
-                tries: 0,
-                timestamp: new Date()
-            };
-            this.statusMap.set(uniqueId, status);
             console.log(`           Email already sent. Skipping...\n`);
             return;
         }
